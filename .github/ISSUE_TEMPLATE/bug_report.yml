@@ -1,0 +1,14 @@
+name: Bug report
+description: Report a problem with the togo audit plugin
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes: { label: What happened?, description: A clear description + steps to reproduce. }
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes: { label: audit / togo version }
+  - type: textarea
+    id: env
+    attributes: { label: Environment, description: OS, Go version, DB driver. }

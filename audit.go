@@ -352,7 +352,6 @@ func (s *Service) routes() {
 	if r == nil {
 		return
 	}
-	r.Use(Middleware)
 	const base = "/api/audit"
 	r.Get(base+"/activity", s.handleActivity)
 	r.Get(base+"/subjects/{type}/{id}", s.handleSubject)
